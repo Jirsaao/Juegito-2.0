@@ -17,14 +17,15 @@ public class PlayerJumpController : MonoBehaviour
     {
         
     }
-    private void OnTriggerEnter2D(Collider2D Collision)
+    private void OnTriggerEnter2D(Collider2D collision)
 
     {
+
         pucSaltar = true;
         GameObject.Find("Player").GetComponent<Animator>().SetBool("salto", false);
 
     }
-    private void OnTriggerExit2D(Collider2D Collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         pucSaltar = false;
         GameObject.Find("Player").GetComponent<Animator>().SetBool("salto", true);
