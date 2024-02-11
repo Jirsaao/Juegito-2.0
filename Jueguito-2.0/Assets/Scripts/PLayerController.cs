@@ -54,7 +54,7 @@ public class PLayerController : MonoBehaviour
             transform.localScale = giro;
             esMovimiento = 0;
         }
-        if(salto == 1)
+        if(salto == 1 && GetComponentInChildren<PlayerJumpController>().pucSaltar)
         {
             GetComponent<Animator>().SetBool("salto", true);
 
