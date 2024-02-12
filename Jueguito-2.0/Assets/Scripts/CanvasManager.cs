@@ -8,12 +8,15 @@ public class CanvasManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI puntuacion;
     [SerializeField] private GameObject boton_pausa;
     [SerializeField] private GameObject menu_pausa;
+    [SerializeField] private TextMeshPro nameUser;
 
-        private void Start()
+
+    private void Start()
     {
         Time.timeScale = 1f;
         boton_pausa.SetActive(true);
         menu_pausa.SetActive(false);
+        nameUser.text = PlayerPrefs.GetString("NameUser");
     }
 
 
