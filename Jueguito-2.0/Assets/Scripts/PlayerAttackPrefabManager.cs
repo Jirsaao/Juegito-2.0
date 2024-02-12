@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+//using TMPro;
 public class PlayerAttackPrefabManager : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -25,10 +25,10 @@ public class PlayerAttackPrefabManager : MonoBehaviour
         if (collision.gameObject.tag == "candestroy")
         {
             Destroy(collision.gameObject);
-            GameObject textCherry = GameObject.Find("TextCherryUI");
+            GameObject puntuacion = GameObject.Find("TextCherryUI");
             int cherryDestroyed = ++GameObject.Find("GameManager")
                 .GetComponent<GameManager>().numeroCherryDestroy;
-            textCherry.GetComponent<TextMeshProUGUI>().SetText(cherryDestroyed+"");
+         //   puntuacion.GetComponent<TextMeshProUGUI>().SetText(cherryDestroyed+"");
         }
     }
 }

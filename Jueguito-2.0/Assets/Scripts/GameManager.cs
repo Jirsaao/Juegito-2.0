@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] private CanvasManager canvasManager;
+
     public int numeroCherryDestroy = 0;
     void Start()
     {
@@ -34,6 +35,21 @@ public class GameManager : MonoBehaviour
             Instantiate(cherryPrefab, posicionCierra, Quaternion.identity);
             yield return new WaitForSeconds(4f);
         }
+    }
+    private int total_puntos = 0;
+    public static GameManager Instance;
+
+    public void Awake()
+    {
+        if(Instance == null)
+        {
+            Instance = this;
+        }
+    }
+    public void HitCherry()
+    {
+        total_puntos ++;
+        canvasManager.UpdateCherryPoints(total_puntos);
     }
 
 }
