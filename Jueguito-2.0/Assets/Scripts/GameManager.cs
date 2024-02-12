@@ -35,8 +35,9 @@ public class GameManager : MonoBehaviour
             Instantiate(cherryPrefab, posicionCierra, Quaternion.identity);
             yield return new WaitForSeconds(4f);
         }
+
     }
-    private int total_puntos = 0;
+
     public static GameManager Instance;
 
     public void Awake()
@@ -45,11 +46,16 @@ public class GameManager : MonoBehaviour
         {
             Instance = this;
         }
+        PlayerStats.Instance.setPuntosActuales(0);
     }
     public void HitCherry()
     {
-        total_puntos ++;
-        canvasManager.UpdateCherryPoints(total_puntos);
+        int puntos = PlayerStats.Instance.addPuntosActuales(2);
+        canvasManager.UpdateCherryPoints(puntos);
+    }
+    private void OnDestroy()
+    {
+        PlayerStats.Instance.addPuntosTotales(PlayerStats.Instance.getPuntosActuales());
     }
 
 }

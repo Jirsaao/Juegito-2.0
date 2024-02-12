@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -39,5 +37,9 @@ public class CanvasManager : MonoBehaviour
     public void clickRestart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    public void clickFinaliza()
+    {
+        SceneManager.LoadScene("MenuInicial");
     }
 }
