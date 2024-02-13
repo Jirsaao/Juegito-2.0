@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
 
             Vector2 posicionCierra = new Vector2(posX, posY);
             Instantiate(cherryPrefab, posicionCierra, Quaternion.identity);
-            yield return new WaitForSeconds(4f);
+            yield return new WaitForSeconds(2f);
         }
 
     }

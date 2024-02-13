@@ -28,7 +28,6 @@ public class PlayerAttackPrefabManager : MonoBehaviour
             GameObject puntuacion = GameObject.Find("TextCherryUI");
             int cherryDestroyed = ++GameObject.Find("GameManager")
                 .GetComponent<GameManager>().numeroCherryDestroy;
-         //   puntuacion.GetComponent<TextMeshProUGUI>().SetText(cherryDestroyed+"");
         }
     }
 }
