@@ -12,8 +12,6 @@ public class GameManager : MonoBehaviour
     {
       StartCoroutine(CreaCerezas());
     }
-
-    // Update is called once per frame
     void Update()
     {
         
@@ -33,7 +31,7 @@ public class GameManager : MonoBehaviour
 
             Vector2 posicionCierra = new Vector2(posX, posY);
             Instantiate(cherryPrefab, posicionCierra, Quaternion.identity);
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(1f);
         }
 
     }

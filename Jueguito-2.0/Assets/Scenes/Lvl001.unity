@@ -1937,6 +1937,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2121356871147085855, guid: 318f50b00d06dcb4c953d3a0c0f3a440, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 376.4778
+      objectReference: {fileID: 0}
+    - target: {fileID: 2121356871147085855, guid: 318f50b00d06dcb4c953d3a0c0f3a440, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 369.8397
+      objectReference: {fileID: 0}
+    - target: {fileID: 2121356871147085855, guid: 318f50b00d06dcb4c953d3a0c0f3a440, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 172
+      objectReference: {fileID: 0}
+    - target: {fileID: 2121356871147085855, guid: 318f50b00d06dcb4c953d3a0c0f3a440, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -28.372
+      objectReference: {fileID: 0}
     - target: {fileID: 2904071080183913390, guid: 318f50b00d06dcb4c953d3a0c0f3a440, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -9
@@ -1948,6 +1964,18 @@ PrefabInstance:
     - target: {fileID: 3882590758872808913, guid: 318f50b00d06dcb4c953d3a0c0f3a440, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5185522844426060515, guid: 318f50b00d06dcb4c953d3a0c0f3a440, type: 3}
+      propertyPath: m_Color.b
+      value: 0.08951937
+      objectReference: {fileID: 0}
+    - target: {fileID: 5185522844426060515, guid: 318f50b00d06dcb4c953d3a0c0f3a440, type: 3}
+      propertyPath: m_Color.g
+      value: 0.08951937
+      objectReference: {fileID: 0}
+    - target: {fileID: 5185522844426060515, guid: 318f50b00d06dcb4c953d3a0c0f3a440, type: 3}
+      propertyPath: m_Color.r
+      value: 0.4792453
       objectReference: {fileID: 0}
     - target: {fileID: 7489994048764115390, guid: 318f50b00d06dcb4c953d3a0c0f3a440, type: 3}
       propertyPath: m_IsActive
